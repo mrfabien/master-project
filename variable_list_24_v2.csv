@@ -10,7 +10,7 @@ convective_rain_rate
 convective_snowfall
 geopotential 
 high_cloud_cover 
-instanteneous_10m_wind_gust
+instantaneous_10m_wind_gust
 k_index
 land_sea_mask 
 large_scale_precipitation 
