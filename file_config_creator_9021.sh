@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Définir le chemin du fichier config.txt
-config_file="config.txt"
+config_file="config_9021.txt"
 
 # Liste des variables
 variables=(
@@ -35,8 +35,8 @@ variables=(
     "total_totals_index"
 )
 
-# Années de 1990 à 2021
-years=$(seq 1991 2020)
+# Années 1990 et 2021
+years=(1990 2021)
 
 # Supprimer le fichier config.txt s'il existe déjà
 rm -f "$config_file"
@@ -48,7 +48,7 @@ echo "ArrayTaskID  Nom_dossier  Année" >> "$config_file"
 task_id=1
 for variable in "${variables[@]}"
 do
-    for year in $years
+    for year in "${years[@]}"
     do
         echo "$task_id  $variable  $year" >> "$config_file"
         ((task_id++))
@@ -56,4 +56,3 @@ do
 done
 
 echo "Le fichier $config_file a été créé avec succès."
-
