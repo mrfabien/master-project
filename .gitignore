@@ -1,3 +1,4 @@
 case_study/shap_explainer/*
+case_study/models/*
 2m_dewpoint_temperature/*
 climatology/test/2m_temperature/*
